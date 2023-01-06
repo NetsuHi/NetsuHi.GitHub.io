@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&display=swap" rel="stylesheet">
+    <link href="./Style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./Images/EDA.png" />
+    <title>E.D.A</title>
+  </head>
+<body>
+
+  <header>
+    <div class="header">
+        <div class="logo">
+            <a href="Index.html" >
+                <img width=75em src="./Images/EDA.png"/>
+              </a>
+        </div>
+        <div class="Name">E.D.A</div>
+        <div class="header-menu"> 
+            <a href="./Planets.html" name="plans"><div class="Pla">Planets</div></a>
+            <a href="./Constellations.html" name="Const"><div class="Const">Constellations</div></a>
+        </div>
+    </div>
+</header>
+
+
+
+<section>
+
+    <iframe width="1750" height="984" src="https://www.youtube.com/embed/MuARMr63Yoc" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+
+    <div class="box">
+    
+
+    <form class="form" action="testformulaire.php" method="get">
+       <div>
+      <p> <label for="JUP">Quel est la plus grande planète du système solaire ?</label>
+            <br>
+            <input type="text" name="Q1" id="JUP"></p>
+            <p> <label for="Typ">Distance Terre - Soleil</label>
+                <br>
+                <input type="text" name="Q2" placeholder="Distance en Km" id="JUP"></p>
+
+            <p>
+              <label>Votre/Vos Planète(s) Préférée(s)</label>  <br> <select multiple name="Planetes[]">
+              <option value="Mercure" selected="selected">Mercure </option>
+              <option value="Vénus" selected="selected">Venus </option>
+              <option value="Terre" selected="selected">Terre </option>
+              <option value="Mars" selected="selected">Mars </option>
+              <option value="Jupiter" selected="selected">Jupiter </option>
+              <option value="Saturne" selected="selected">Saturne </option>
+              <option value="Uranus" selected="selected">Uranus </option>
+              <option value="Neptune" selected="selected">Neptune </option>
+            </select>
+
+          </p>
+      
+            <p>
+              <label>1 année lumière en Km</label>
+              <br>
+              <input type="radio" name="AnneeL" value="Faux">400 000 000 Km</input>
+              <input type="radio" name="AnneeL" value="Vrai">9,461x10^12 Km</input>
+              <input type="radio" name="AnneeL" value="Faux">12 000 463 035 Km</input>
+              <input type="radio" name="AnneeL" value="Vrai">460 800 000 000 Km</input>
+            </p>
+          </div> 
+          <div class="boutons">
+              
+            
+                <input type="submit" value="L'infini et l'au dela">
+                <input type="reset" value="Effacez le formulaire">
+              </div>
+        
+          </form>
+        </div>
+       
+      
+
+
+
+
+      <table class="tab">
+          <thead>
+              <tr>
+                  <th colspan="5">Planets</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th>Tellurics</th>
+                    <td>Mércure</td>
+                    <td>Vénus</td>
+                    <td>Terre</td>
+                    <td>Mars</td>
+              </tr>
+
+              <tr>
+                  <th>Giant Gaseous</th>
+                    <td>Jupiter</td>
+                    <td>Saturne</td>
+              </tr>
+
+              <tr>
+                  <th>Giant Ices</th>
+                    <td>Uranus</td>
+                    <td>neptune</td>
+              </tr>
+          </tbody>
+        </table>
+      </section>
+
+        <div class="foot">
+            <p> A Enfants Des Astres production.</p>
+        </div>
+
+        
+   
+
+
+
+
+
+
+
+</body>
+</html>

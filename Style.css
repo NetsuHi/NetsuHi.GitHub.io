@@ -1,0 +1,304 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&display=swap');
+
+body {
+    font-family: "Kanit", Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color:rgb(27, 27, 27);
+    
+}
+
+.Name{
+    float: left;
+    padding: 20px;
+}
+
+.header{
+    background-color: white;
+    width: 100%;
+    height: 110px;
+}
+
+.dz{
+    background-color:rgb(27, 27, 27);
+    float: left;
+    width: 100%;
+    height: 750px;
+}
+
+.du{
+  background-color:rgb(27, 27, 27);
+  width: 100%;
+  height: 750px;
+  float: left;
+}
+
+.espace{
+  background-color:rgb(27, 27, 27);
+  width: 100%;
+  height: 20px;
+  float: left;
+}
+
+.Pla {
+    float: left;
+    border: 2px solid rgb(27, 27, 27);
+    padding: 5px 20px 5px 20px;
+    background-color: white;
+   color:rgb(27, 27, 27);
+   border-radius: 30px ;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 2%;
+    margin-right: 0.5%;
+    margin-left: 30%;
+    margin-bottom: 10px;
+    transition: 2.5s;
+}
+
+.Pla:hover{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border-radius: 30px ;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+   
+}
+
+
+
+.Const {
+    float: left;
+    border: 2px solid rgb(27, 27, 27);
+    padding: 5px 20px 5px 20px;
+    background-color: white;
+   color: rgb(27, 27, 27);
+   border-radius: 30px ;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 2%;
+    margin-left: 0.5%;
+    margin-right:0.1%;
+    margin-bottom: 10px;
+    transition: 2.5s;
+}
+
+.Const:hover {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border-radius: 30px ;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+.Name{
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: 900;
+    font-size: 50px;
+    padding-left: 39.5%;
+    padding-bottom: 5px;
+}
+
+.logo {
+   padding: 20px;
+   float: left;
+   padding-bottom: 5px;
+}
+
+.masked-overflow {
+  float: right;
+    width: 46.5%;
+    margin-left: 20px;
+    /* scroll bar width, for use in mask calculations */
+    --scrollbar-width: 15px;
+
+    /* mask fade distance, for use in mask calculations */
+    --mask-height: 32px;
+
+    /* If content exceeds height of container, overflow! */
+    overflow-y: auto;
+
+    /* Our height limit */
+    height: 750px;
+
+    /* Need to make sure container has bottom space,
+  otherwise content at the bottom is always faded out */
+    padding-bottom:0px;
+
+    /* Keep some space between content and scrollbar */
+    padding-right: 20px;
+
+    /* The CSS mask */
+
+    /* The content mask is a linear gradient from top to bottom */
+    --mask-image-content: linear-gradient(
+        to bottom,
+        transparent,
+        black var(--mask-height),
+        black calc(100% - var(--mask-height)),
+        transparent
+    );
+
+    /* Here we scale the content gradient to the width of the container 
+  minus the scrollbar width. The height is the full container height */
+    --mask-size-content: calc(100% - var(--scrollbar-width)) 100%;
+
+    /* The scrollbar mask is a black pixel */
+    --mask-image-scrollbar: linear-gradient(black, black);
+
+    /* The width of our black pixel is the width of the scrollbar.
+  The height is the full container height */
+    --mask-size-scrollbar: var(--scrollbar-width) 100%;
+
+    /* Apply the mask image and mask size variables */
+    -webkit-mask-image: var(--mask-image-content), var(--mask-image-scrollbar);
+            mask-image: var(--mask-image-content), var(--mask-image-scrollbar);
+    -webkit-mask-size: var(--mask-size-content), var(--mask-size-scrollbar);
+            mask-size: var(--mask-size-content), var(--mask-size-scrollbar);
+
+    /* Position the content gradient in the top left, and the 
+  scroll gradient in the top right */
+    -webkit-mask-position: 0 0, 100% 0;
+            mask-position: 0 0, 100% 0;
+
+    /* We don't repeat our mask images */
+    -webkit-mask-repeat: no-repeat, no-repeat;
+            mask-repeat: no-repeat, no-repeat;
+
+}
+.masked-overflow::-webkit-scrollbar {
+  width: 10px;
+}
+
+.masked-overflow::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 100px;
+}
+
+.masked-overflow::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 100px;
+}
+
+.masked-overflow p {
+    font-family: "Martian mono";
+    font-size: 60px;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+.box{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 400px ;
+  height: 500px ;
+  background-color:rgb(56, 56, 56);
+  border-radius: 8px;
+  color: white;
+  overflow: hidden;
+  margin-left: 40%;
+}
+
+.box::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 400px ;
+  height: 500px ;
+  background: linear-gradient(0deg, transparent, 
+  #884DA7,#884DA7);
+  transform-origin: bottom right;
+  border-radius: 8px;
+  animation: animate 6s linear infinite;
+}
+
+.box::after{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 400px ;
+  height: 500px ;
+  background: linear-gradient(0deg, transparent, 
+  #884DA7,#884DA7);
+  transform-origin: bottom right;
+  border-radius: 8px;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+@keyframes animate
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+.form{
+  position: absolute;
+  inset: 3px;
+  background: rgb(56, 56, 56);;
+  z-index: 10;
+  flex-direction: column;
+  display: flex;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+
+input[type="submit"], input[type="reset"] {
+  border: none;
+  outline: none;
+  background: #884DA7;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+}
+
+.Planète1 {
+  margin-left: 150px;
+}
+
+.du .masked-overflow {
+  float: left;
+}
+
+.boutons{
+  margin-left: 25px;
+}
+
+table {
+  border: 2px solid #371d46;
+  margin-left: 42%;
+  margin-top: 20px;
+  color: white;
+}
+
+td, th {
+  border: 1px solid #884DA7;
+}
+
+iframe{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 3.75%;
+}
+
+
+.foot {
+  margin-left: 44%;
+  margin-top: 10px;
+  color: white;
+}
